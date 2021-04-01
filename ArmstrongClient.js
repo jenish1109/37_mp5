@@ -1,4 +1,4 @@
-var buffer = require('buffer');
+var buffer = require('buffer')
 var udp = require('dgram');
 // creating a client socket
 var client = udp.createSocket('udp4');
@@ -16,7 +16,6 @@ client.send(data, 2222, 'localhost', function(error) {
         console.log('Data sent !!!');
     }
 });
-
 client.on('close', function() {
     console.log('Client Socket is closed !');
 });
